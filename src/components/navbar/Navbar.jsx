@@ -20,16 +20,16 @@ const Navbar = () => {
               <NavLink to="/">AI Audit</NavLink>
             </li>
             <li>
-              <NavLink to="*">Manual Audit</NavLink>
+              <NavLink to="https://quillaudit.netlify.app/">Manual Audit</NavLink>
             </li>
             <li>
-              <NavLink to="*">RedTeam</NavLink>
+              <NavLink to="https://quillaudit.netlify.app/">RedTeam</NavLink>
             </li>
             <li>
-              <NavLink to="*">Monitor</NavLink>
+              <NavLink to="https://quillaudit.netlify.app/">Monitor</NavLink>
             </li>
             <li>
-              <NavLink to="*">Incident Response</NavLink>
+              <NavLink to="https://quillaudit.netlify.app/">Incident Response</NavLink>
             </li>
           </ul>
           
