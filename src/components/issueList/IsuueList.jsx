@@ -11,16 +11,16 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 export default function IssueList({ onChevronClick }) {
   return (
     <Container maxWidth="l">
-      <div className="w-72 h-12 bg-primary font-body shadow rounded flex flex-row items-center justify-evenly">
+      <div className="w-86 h-12 bg-primary font-body shadow rounded flex flex-row items-center justify-evenly">
         <Button variant="contained">Current file</Button>
         <Button>Full Project</Button>
       </div>
       {issueList.map((data, index) => (
         <div
-          className="w-72 bg-primary font-body shadow rounded flex flex-row items-center justify-between p-2 my-2.5"
+          className="w-86 bg-primary font-body shadow rounded flex flex-row items-center justify-between p-2 my-2.5"
           key={data.number}
         >
-          <div className="flex flex-row items-center" style={{ width: "30%" }}>
+          <div className="flex flex-row items-center" style={{ width: "35%" }}>
             <div className="round1" style={{ background: getRandomColor() }}></div>
             <div className="text-white tracking-wider font-body text-2xl leading-9 font-bold pl-4">
               {data.number}

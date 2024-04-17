@@ -24,7 +24,7 @@ export default function IssueSection() {
   return (
     <>
       <Container maxWidth="l">
-        <div class="w-86 p-2 mr-6 bg-zinc-900 shadow rounded">
+        <div className="w-86 p-2 mr-6 bg-zinc-900 shadow rounded">
           <Breadcrumbs
             aria-label="breadcrumb"
             className="issue-heading"

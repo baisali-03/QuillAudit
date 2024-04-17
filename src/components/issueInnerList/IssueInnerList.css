@@ -2,13 +2,14 @@
     width: 10px;
     height: 10px;
     gap: 0px;
+    margin-left: 20px;
     opacity: 0px;
     border-radius: 50%;
     background: #FF4D4D;
 }
 
 .accordion1 {
-    width: 274px;
+    
     gap: 0px;
     border-radius: 4px 0px 0px 0px;
     border: 1px 0px 0px 0px;
@@ -17,7 +18,7 @@
     margin-top: 16px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:flex-start;
     background-color: #191D23;
     border: 1px solid #0000000A;
 }
@@ -26,6 +27,7 @@
 
     font-family: Lato;
     font-size: 28px;
+    
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.05em;
