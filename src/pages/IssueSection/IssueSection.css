@@ -1,0 +1,25 @@
+.issue-heading {
+    color: '#CCCCCC';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    padding-left: 24px;
+}
+.issue-heading a {
+    text-decoration: none;
+    color: white;
+}
+.issue-heading a:hover {
+    text-decoration: none;
+    color: white;
+}
+.line1 {
+    width: 278px;
+    height: 0px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin: 16px 0 16px 24px ;
+    border: 1px solid #FFFFFF14;
+}

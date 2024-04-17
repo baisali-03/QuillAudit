@@ -1,0 +1,28 @@
+
+.round1 {
+    width: 10px;
+    height: 10px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 50%;
+    background:#FFD166;
+    ;
+}
+.small_line1 {
+    width: 0px;
+    height: 30px;
+    border-left: 1px solid #FFFFFF14;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #FFFFFF14
+}
+.Issue-line {
+    width: 290px;
+    height: 0px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin: 12px 0 10px 0;
+    border: 1px solid #FFFFFF14;
+}

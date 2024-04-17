@@ -1,0 +1,74 @@
+.sampleProject {
+    display: flex;
+    flex-direction: row;
+    padding-left: 16px;
+    justify-content: space-between;
+}
+
+.projectSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.linelarge {
+    width: 1445px;
+    height: 0px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    margin: 16px;
+    opacity: 0px;
+    border: 1px solid #FFFFFF14;
+}
+
+.AuditButton {
+    font-family: 'Lato';
+    width: 120px;
+    height: 36px;
+    padding: 10px 24px;
+    border-radius: 3px;
+    background-color: #007AFF;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    margin-right: 16px;
+}
+
+.OptionsButton {
+    font-family: 'Lato';
+    width: 120px;
+    height: 36px;
+    padding: 10px 24px;
+    border-radius: 3px;
+    background-color: #007AFF29;
+    color: #007AFF;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 32px;
+    line-height: 18px;
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .projectSection {
+        flex-direction: column;
+    }
+
+    .sampleProject {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linelarge {
+        margin: 16px 0;
+    }
+
+    .AuditButton,
+    .OptionsButton {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
