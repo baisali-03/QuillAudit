@@ -19,7 +19,7 @@ const CodeEditor = ({ code, language }) => {
   }, [code, language]);
 
   return (
-    <div className="codeEditorContainer">
+    <div className="codeEditorContainer ">
       <div className="fileName">
         <div className="fileName1">Sample File  <span style={{paddingLeft:20}}> X</span></div>
 

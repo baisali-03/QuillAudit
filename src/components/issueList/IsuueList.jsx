@@ -15,12 +15,13 @@ export default function IssueList({ onChevronClick }) {
         <Button variant="contained">Current file</Button>
         <Button>Full Project</Button>
       </div>
-      {issueList.map((data) => (
+      {issueList.map((data, index) => (
         <div
           className="w-72 bg-primary font-body shadow rounded flex flex-row items-center justify-between p-2 my-2.5"
-          key={data.number}>
+          key={data.number}
+        >
           <div className="flex flex-row items-center" style={{ width: "30%" }}>
-            <div className="round1"></div>
+            <div className="round1" style={{ background: getRandomColor() }}></div>
             <div className="text-white tracking-wider font-body text-2xl leading-9 font-bold pl-4">
               {data.number}
             </div>
@@ -28,12 +29,14 @@ export default function IssueList({ onChevronClick }) {
           <div className="small_line1"></div>
           <div
             className="text-white font-body text-sm leading-4 pl-3 "
-            style={{ width: "60%" }}>
+            style={{ width: "60%" }}
+          >
             {data.title}
           </div>
           <div
             onClick={() => onChevronClick()}
-            style={{ color: "white", cursor: "pointer" }}>
+            style={{ color: "white", cursor: "pointer" }}
+          >
             <ChevronRightIcon />
           </div>
         </div>
@@ -45,4 +48,14 @@ export default function IssueList({ onChevronClick }) {
       </div>
     </Container>
   );
+}
+
+
+function getRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
