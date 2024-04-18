@@ -6,7 +6,7 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import { Typography } from "@mui/material";
 import IssueList from "../../components/issueList/IsuueList";
 import IssueInnerList from "../../components/issueInnerList/IssueInnerList";
-import IssueDescription from "../../components/issueDescription/IssueDescription";
+import IssueInnerDescription from "../../components/issueInnerDescription/IssueInnerDescription";
 
 const CustomSeparator = () => (
   <Typography variant="body1" style={{ color: "#7B8191" }}>
@@ -62,7 +62,7 @@ export default function IssueSection() {
             onIssueTitleClick={handleIssueTitleClick}
           />
         ) : showDescription ? (
-          <IssueDescription />
+          <IssueInnerDescription />
         ) : (
           <IssueList onChevronClick={handleChevronClick} />
         )}

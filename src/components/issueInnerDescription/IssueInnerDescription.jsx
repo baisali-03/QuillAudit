@@ -3,7 +3,7 @@ import "./IssueDescription.css";
 import Container from "@mui/material/Container";
 import AssistantPhotoIcon from "@mui/icons-material/AssistantPhoto";
 
-export default function IssueDescription() {
+export default function IssueInnerDescription() {
   return (
     <Container maxWidth="l">
       <div className="issueDescriptionTitle">#1. Lorem ipsum dolor sit ame</div>
