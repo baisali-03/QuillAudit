@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./issueDescription.css";
+import "./IssueDescription.css";
 import Container from "@mui/material/Container";
 import AssistantPhotoIcon from "@mui/icons-material/AssistantPhoto";
 
