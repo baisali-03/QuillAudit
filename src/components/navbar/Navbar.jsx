@@ -11,8 +11,6 @@ const Navbar = () => {
           <img src={Logo} alt="Profile" />
           <div className="navbarLine"></div>
         </div>
-        
-        
         <div className="flex flex-row">
         <div className="nav-list">
           <ul>
@@ -35,7 +33,6 @@ const Navbar = () => {
           
         </div>
         <div className="profile">
-        {/* <div className="navbarLine"></div> */}
           <img src={avatar} className="dp" alt="Profile" />
           <span className="text-white">Johhny Doe</span>
           <img src={Arrow} className="Arrow" alt="arrow" />

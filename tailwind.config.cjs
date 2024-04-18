@@ -15,7 +15,8 @@ module.exports = {
         blueColor: '#007AFF',
         text: "#7B8191",
         white:'#fff',
-        tomato:'#FF6F50'
+        tomato:'#FF6F50',
+        darkblue:'#13161a',
       }
     },
   },

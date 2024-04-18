@@ -3,8 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #242424;
+  font-family: 'Lato';
+  background-color: #000;
 }
 
 .nav-elements {
@@ -17,11 +17,9 @@ body {
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   height: 100%;
 }
-
 .navbar {
   height: 52px;
   margin: 0 20px;
@@ -29,9 +27,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.04);
   border-radius: 4px;
   position: relative;
-
 }
-
 .nav-list ul {
 
   font-family: 'Lato';

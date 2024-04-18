@@ -11,7 +11,7 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 export default function IssueList({ onChevronClick }) {
   return (
     <Container maxWidth="l">
-      <div className="w-86 h-12 bg-primary font-body shadow rounded flex flex-row items-center justify-evenly">
+      <div className="w-86 h-12 bg-primary font-body shadow rounded flex flex-row items-center justify-between pl-2 pr-10">
         <Button variant="contained">Current file</Button>
         <Button>Full Project</Button>
       </div>
