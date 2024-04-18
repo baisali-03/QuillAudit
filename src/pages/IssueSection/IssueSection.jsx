@@ -13,9 +13,10 @@ const CustomSeparator = () => (
     /
   </Typography>
 );
-
 export default function IssueSection() {
-  const [breadcrumbLabels, setBreadcrumbLabels] = React.useState(["Count of Issues"]);
+  const [breadcrumbLabels, setBreadcrumbLabels] = React.useState([
+    "Count of Issues",
+  ]);
   const [showInnerList, setShowInnerList] = React.useState(false);
   const [showDescription, setShowDescription] = React.useState(false);
 
@@ -34,7 +35,11 @@ export default function IssueSection() {
   const handleDescriptionClick = () => {
     setShowDescription(true);
     setShowInnerList(false);
-    setBreadcrumbLabels(["Count of Issues", "High Severity Issues", "Issue Description"]);
+    setBreadcrumbLabels([
+      "Count of Issues",
+      "High Severity Issues",
+      "Issue Description",
+    ]);
   };
 
   return (
@@ -43,26 +48,27 @@ export default function IssueSection() {
         <Breadcrumbs
           aria-label="breadcrumb"
           className="issue-heading"
-          separator={<CustomSeparator />}
-        >
+          separator={<CustomSeparator />}>
           {breadcrumbLabels.map((label, index) => (
             <NavLink
               key={index}
               className="font-lato text-text no-underline text-sm font-medium leading-4 text-left"
               onClick={() => {
                 setBreadcrumbLabels(breadcrumbLabels.slice(0, index + 1));
-                setShowInnerList(index === 1); 
-                setShowDescription(index === 2); 
+                setShowInnerList(index === 1);
+                setShowDescription(index === 2);
               }}
-              style={{ cursor: "pointer", color: "white" }}
-            >
+              style={{ cursor: "pointer", color: "white" }}>
               {label}
             </NavLink>
           ))}
         </Breadcrumbs>
         <div className="line1"></div>
         {showInnerList ? (
-          <IssueInnerList onChevronClick={handleChevronClick} onIssueTitleClick={handleIssueTitleClick} />
+          <IssueInnerList
+            onChevronClick={handleChevronClick}
+            onIssueTitleClick={handleIssueTitleClick}
+          />
         ) : showDescription ? (
           <IssueDescription />
         ) : (
