@@ -14,7 +14,8 @@ module.exports = {
         secondary: '#181818',
         blueColor: '#007AFF',
         text: "#7B8191",
-        white:'#fff'
+        white:'#fff',
+        tomato:'#FF6F50'
       }
     },
   },

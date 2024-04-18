@@ -17,7 +17,11 @@ export default function ProjectCard() {
             </div>
             <div>
               <button className="AuditButton">Audit Now</button>
-              <button className="OptionsButton">Options</button>
+              <button className="OptionsButton relative">
+                Options
+               
+                <span className="notification-dot absolute top-0 right-0 bg-tomato rounded-full w-3 h-3"></span>
+              </button>
             </div>
           </div>
           <div className="linelarge"></div>
