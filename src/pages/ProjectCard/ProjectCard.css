@@ -61,10 +61,6 @@
         align-items: center;
     }
 
-    .linelarge {
-        margin: 16px 0;
-    }
-
     .AuditButton,
     .OptionsButton {
         width: auto;

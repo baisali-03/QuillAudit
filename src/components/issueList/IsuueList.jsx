@@ -42,7 +42,7 @@ export default function IssueList({ onChevronClick }) {
         </div>
       ))}
       <div className="Issue-line"></div>
-      <div className="text-white text-sm leading-4 flex flex-row items-center pb-1">
+      <div className="text-white text-sm leading-4 flex flex-row items-center">
         <Checkbox {...label} style={{ color: "white" }} />
         <div>Exclude Dependencies</div>
       </div>

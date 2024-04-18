@@ -7,8 +7,10 @@ const LazyInnerIssue = React.lazy(() =>
   import("./components/issueInnerList/IssueInnerList")
 );
 const LazyInnerIssueDescription = React.lazy(() =>
-  import("./components/issueDescription/issueDescription")
+  import("./components/issueDescription/IssueDescription")
 );
+
+
 const App = () => {
   return (
     <BrowserRouter>

@@ -1,90 +1,78 @@
-.round {
-    width: 10px;
-    height: 10px;
-    gap: 0px;
-    opacity: 0px;
-    border-radius: 50%;
-    background: #FF4D4D;
-}
-
-.accordion1 {
-    width: 274px;
-    gap: 0px;
-    border-radius: 4px 0px 0px 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
+.issueDescriptionTitle {
+    font-family: Lato;
+    font-size: 14px;
     display: flex;
-    margin-top: 16px;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    padding-left: 10px;
     background-color: #191D23;
     border: 1px solid #0000000A;
-}
-
-.number {
-
-    font-family: Lato;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.05em;
+    border-radius: 4px 0px 0px 0px;
+    font-weight: 400;
+    line-height: 18px;
+    width: 372px;
+    height: 46px;
     text-align: left;
+    color: #CCCCCC;
+    margin-bottom: 10px;
 }
 
+.issueTitle1 {
+    font-family: Lato;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
 
-.small_line {
-    width: 0px;
-    height: 40px;
-    border-left: 1px solid #FFFFFF14;
-    gap: 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    border: 1px solid #FFFFFF14
+    align-items: left;
+    padding-left: 10px;
+    background-color: #191D23;
+    border: 1px solid #0000000A;
+    border-radius: 4px 0px 0px 0px;
+    font-weight: 400;
+    line-height: 18px;
+    width: 372px;
+    height: 250px;
+    text-align: left;
+    color: #CCCCCC;
+    margin-bottom: 10px;
+    max-height: 315px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.Issueline {
-    width: 278px;
+.issueTitle1::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.issueDescriptionCard {
+    height: 320px;
+}
+
+.IssueDescriptionLine {
+    width: 372px;
     height: 0px;
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
-    margin: 16px 0px;
+    margin: 10px 0px 10px 0;
     border: 1px solid #FFFFFF14;
 }
 
-.Issueheading {
-    /* //styleName: M14 - E-White; */
-    /* font-family: Lato; */
-    padding-top: 16px;
-    font-size: 14px;
-    font-weight: 500;
+.AuditFixButton {
+    font-family: 'Lato';
+    width: 120px;
+    height: 36px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #007AFF;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
     line-height: 18px;
     text-align: left;
-    color: #EEEEEE;
-
-}
-
-.issueTitle {
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    width: 80%;
-    text-align: left;
-    color: #CCCCCC;
-
-}
-
-.issue-title-scrollable {
-    max-height: 315px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    
-}
-
-.issue-title-scrollable::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    display: none;
+    margin-right: 16px;
 }

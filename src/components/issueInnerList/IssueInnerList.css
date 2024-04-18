@@ -9,7 +9,7 @@
 }
 
 .accordion1 {
-    
+
     gap: 0px;
     border-radius: 4px 0px 0px 0px;
     border: 1px 0px 0px 0px;
@@ -18,7 +18,7 @@
     margin-top: 16px;
     flex-direction: row;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
     background-color: #191D23;
     border: 1px solid #0000000A;
 }
@@ -27,7 +27,7 @@
 
     font-family: Lato;
     font-size: 28px;
-    
+
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.05em;
@@ -74,16 +74,14 @@
     width: 80%;
     text-align: left;
     color: #CCCCCC;
-
+    padding-left: 10px;
 }
 
 .issue-title-scrollable {
     max-height: 262px;
     overflow-y: auto;
     overflow-x: hidden;
-    
 }
-
 .issue-title-scrollable::-webkit-scrollbar {
     width: 0;
     height: 0;
