@@ -32,15 +32,7 @@ export default function IssueSection() {
     setBreadcrumbLabels(["Count of Issues", "High Severity Issues"]);
   };
 
-  const handleDescriptionClick = () => {
-    setShowDescription(true);
-    setShowInnerList(false);
-    setBreadcrumbLabels([
-      "Count of Issues",
-      "High Severity Issues",
-      "Issue Description",
-    ]);
-  };
+
 
   return (
     <Container maxWidth="l">
