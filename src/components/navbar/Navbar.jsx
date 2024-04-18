@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         <div className="profile">
           <img src={avatar} className="dp" alt="Profile" />
-          <span className="text-white">Johhny Doe</span>
+          <span className="text-white text-sm">Johhny Doe</span>
           <img src={Arrow} className="Arrow" alt="arrow" />
         </div>
         </div>
