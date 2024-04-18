@@ -1,4 +1,5 @@
 import * as React from "react";
+import { NavLink } from "react-router-dom";
 import "./IssueSection.css";
 import Container from "@mui/material/Container";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
@@ -29,14 +30,15 @@ export default function IssueSection() {
             aria-label="breadcrumb"
             className="issue-heading"
             separator={<CustomSeparator />}>
-            <Link
+            <NavLink
+            className="font-lato text-text no-underline text-sm font-medium leading-4 text-left"
               onClick={() => setShowInnerList(false)}
               style={{ cursor: "pointer", color: "white" }}
               >
               Count of Issues
-            </Link>
+            </NavLink>
             {showInnerList ? (
-              <Typography color="#fff">Issue Inner List</Typography>
+              <div className="font-lato text-white no-underline text-sm font-medium leading-3 text-left">Issue Inner List</div>
             ) : (
               <></>
             )}
