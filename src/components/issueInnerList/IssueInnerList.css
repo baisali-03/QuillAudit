@@ -78,7 +78,7 @@
 }
 
 .issue-title-scrollable {
-    max-height: 240px;
+    max-height: 262px;
     overflow-y: auto;
     overflow-x: hidden;
     
