@@ -1,12 +1,14 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import "./IssueSection.css";
 import Container from "@mui/material/Container";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import { Typography } from "@mui/material";
 import IssueList from "../../components/issueList/IsuueList";
 import IssueInnerList from "../../components/issueInnerList/IssueInnerList";
 import IssueInnerDescription from "../../components/issueInnerDescription/IssueInnerDescription";
+import Checkbox from "@mui/material/Checkbox";
+
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const CustomSeparator = () => (
   <Typography variant="body1" style={{ color: "#7B8191" }}>
@@ -23,23 +25,21 @@ export default function IssueSection() {
   const handleChevronClick = () => {
     setShowInnerList(!showInnerList);
     setShowDescription(false);
-    setBreadcrumbLabels(["Count of Issues"]);
+    setBreadcrumbLabels(["Count of Issues",  "High Severity Issues"]);
   };
 
   const handleIssueTitleClick = () => {
     setShowDescription(true);
     setShowInnerList(false);
-    setBreadcrumbLabels(["Count of Issues", "High Severity Issues"]);
+    setBreadcrumbLabels(["Count of Issues", "High Severity Issues","Issue #1"]);
   };
-
-
 
   return (
     <Container maxWidth="l">
-      <div className="w-86 p-2 mr-6 bg-darkblue shadow rounded">
+      <div className="w-96 p-2 mr-6 bg-darkblue shadow rounded">
         <Breadcrumbs
           aria-label="breadcrumb"
-          className="issue-heading"
+          className="font-medium leading-4 text-left pl-6 pt-1 text-subTitle "
           separator={<CustomSeparator />}>
           {breadcrumbLabels.map((label, index) => (
             <NavLink
@@ -55,7 +55,7 @@ export default function IssueSection() {
             </NavLink>
           ))}
         </Breadcrumbs>
-        <div className="line1"></div>
+        <div className="w-auto my-4 mx-4 border border-solid border-darkBorder"></div>
         {showInnerList ? (
           <IssueInnerList
             onChevronClick={handleChevronClick}
@@ -65,6 +65,16 @@ export default function IssueSection() {
           <IssueInnerDescription />
         ) : (
           <IssueList onChevronClick={handleChevronClick} />
+        )}
+       
+        {!showDescription && (
+          <>
+           <div className="w-auto my-4 mx-6 border border-solid border-darkBorder"></div>
+          <div className="text-white text-sm leading-4 ml-3 flex flex-row items-center">
+            <Checkbox {...label} style={{ color: "white" }} />
+            <div>Exclude Dependencies</div>
+          </div>
+          </>
         )}
       </div>
     </Container>

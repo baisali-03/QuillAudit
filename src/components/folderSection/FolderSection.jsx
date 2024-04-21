@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import FolderOutlinedIcon from '@mui/icons-material/FolderOutlined';
+import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
 import NoteIcon from "@mui/icons-material/Note";
-import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
-import FolderIcon from '@mui/icons-material/Folder';
-import FolderOpenOutlinedIcon from '@mui/icons-material/FolderOpenOutlined';
+import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
+import FolderIcon from "@mui/icons-material/Folder";
+import FolderOpenOutlinedIcon from "@mui/icons-material/FolderOpenOutlined";
 
 function FolderSection({ explorer }) {
   const [expand, setExpand] = useState(false);
@@ -39,9 +39,13 @@ function FolderSection({ explorer }) {
               {expand ? (
                 <FolderOpenOutlinedIcon style={{ color: "#007AFFE5" }} />
               ) : (
-                <FolderIcon style={{ color: expand ? "#007AFFE5" : "#AAAAAA" }} />
+                <FolderIcon
+                  style={{ color: expand ? "#007AFFE5" : "#AAAAAA" }}
+                />
               )}{" "}
-              <span style={{ color: expand ? "#007AFFE5" : "inherit" }}>{explorer.name}</span>
+              <span style={{ color: expand ? "#007AFFE5" : "inherit" }}>
+                {explorer.name}
+              </span>
             </span>
           </button>
           <div style={{ display: expand ? "block" : "none", paddingLeft: 15 }}>
@@ -54,14 +58,24 @@ function FolderSection({ explorer }) {
         <div
           onClick={() => handleFileClick(explorer.name)}
           style={{
-            backgroundColor: selectedFile === explorer.name ? "#007AFF14" : "transparent",
+            backgroundColor:
+              selectedFile === explorer.name ? "#007AFF14" : "transparent",
             cursor: "pointer",
             color: selectedFile === explorer.name ? "#007AFF" : "inherit",
           }}
-          className="py-1"
-        >
-          <NoteIcon style={{ color: selectedFile === explorer.name ? "#007AFF" : "#AAAAAA", marginRight: 4 }} />
-          <span style={{ color: selectedFile === explorer.name ? "#007AFF" : "inherit" }}>{explorer.name}</span>
+          className="py-1">
+          <NoteIcon
+            style={{
+              color: selectedFile === explorer.name ? "#007AFF" : "#AAAAAA",
+              marginRight: 4,
+            }}
+          />
+          <span
+            style={{
+              color: selectedFile === explorer.name ? "#007AFF" : "inherit",
+            }}>
+            {explorer.name}
+          </span>
           <br />
         </div>
       )}

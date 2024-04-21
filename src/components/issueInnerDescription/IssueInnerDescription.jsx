@@ -6,9 +6,11 @@ import AssistantPhotoIcon from "@mui/icons-material/AssistantPhoto";
 export default function IssueInnerDescription() {
   return (
     <Container maxWidth="l">
-      <div className="issueDescriptionTitle">#1. Lorem ipsum dolor sit ame</div>
-      <div className="issueDescriptionCard">
-        <div className="issueTitle1">
+      <div className="w-80 text-sm flex items-center pl-2 bg-primary rounded font-normal leading-4 h-12 text-left text-gray-400 mb-2">
+        #1. Lorem ipsum dolor sit ame
+      </div>
+      <div className="h-80">
+        <div className="text-xs flex flex-col pl-2 bg-primary rounded font-normal leading-4 h-64 text-left text-gray-400 mb-2 overflow-y-auto overflow-x-hidden items-start border border-solid border-borderColor issueTitle1 w-80">
           <div className="font-lato font-bold text-xs py-2 leading-4 text-blueColor">
             Description
           </div>
@@ -32,9 +34,11 @@ export default function IssueInnerDescription() {
             ididunt utio labore et dolore magna aliqua.
           </div>
         </div>
-        <div className="IssueDescriptionLine"></div>
+        <div className="my-2.5 border border-solid border-darkBorder"></div>
         <div className="flex flex-row justify-end items-center">
-          <button className="AuditFixButton">Auto Fix Code</button>
+          <button className="w-32 h-8 p-2 rounded-sm bg-blue-600 text-white flex items-center justify-center text-xs font-semibold leading-4 text-left mr-4">
+            Auto Fix Code
+          </button>
           <AssistantPhotoIcon
             style={{
               border: "1.2px solid #FF4D4D",

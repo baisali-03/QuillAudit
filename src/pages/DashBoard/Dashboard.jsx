@@ -1,7 +1,6 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import "./Dashboard.css";
 import Navbar from "../../components/navbar/Navbar";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
