@@ -59,7 +59,13 @@ const CodeEditor = ({
         <IconButton
           onClick={handleCancel}
           className="cancelButton"
-          style={{ color: "white" }}>
+          style={{
+            color: "white",
+            backgroundColor: "blue",
+            borderRadius: "10px",
+            height:25,
+            width:35,
+          }}>
           <ArrowBackIcon />
         </IconButton>
       </div>
@@ -67,7 +73,13 @@ const CodeEditor = ({
         <IconButton
           onClick={handleCancelIssue}
           className="cancelButton"
-          style={{ color: "white" }}>
+          style={{
+            color: "white",
+            backgroundColor: "blue",
+            borderRadius: "10px",
+            height:25,
+            width:35,
+          }}>
           <ArrowForwardIcon />
         </IconButton>
       </div>
