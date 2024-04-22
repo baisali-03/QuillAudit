@@ -61,10 +61,12 @@ const CodeEditor = ({
           className="cancelButton"
           style={{
             color: "white",
-            backgroundColor: "blue",
-            borderRadius: "10px",
-            height:25,
-            width:35,
+            backgroundColor: "#007AFF",
+            borderRadius: "2px",
+            padding:'4px',
+            height:20,
+            width:20,
+            marginBottom:'20px',
           }}>
           <ArrowBackIcon />
         </IconButton>
@@ -75,10 +77,12 @@ const CodeEditor = ({
           className="cancelButton"
           style={{
             color: "white",
-            backgroundColor: "blue",
-            borderRadius: "10px",
-            height:25,
-            width:35,
+            backgroundColor: "#007AFF",
+            borderRadius: "2px",
+            padding:'4px',
+            height:20,
+            width:20,
+            marginBottom:'20px',
           }}>
           <ArrowForwardIcon />
         </IconButton>

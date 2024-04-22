@@ -10,8 +10,8 @@ export default function IssueInnerDescription() {
         #1. Lorem ipsum dolor sit ame
       </div>
       <div className="h-80">
-        <div className="text-xs flex flex-col pl-2 bg-primary rounded font-normal leading-4 h-64 text-left text-gray-400 mb-2 overflow-y-auto overflow-x-hidden items-start border border-solid border-borderColor issueTitle1 w-80">
-          <div className="font-lato font-bold text-xs py-2 leading-4 text-blueColor">
+        <div className="text-sm flex flex-col pl-2 bg-primary rounded font-normal leading-4 h-72 text-left text-gray-400 mb-2 overflow-y-auto overflow-x-hidden items-start border border-solid border-borderColor issueTitle1 w-80">
+          <div className="font-lato font-bold text-sm py-2 leading-4 text-blueColor">
             Description
           </div>
           <div>
@@ -22,7 +22,7 @@ export default function IssueInnerDescription() {
             aliqua. om ipsum dolor sit amet ectr ig elit, sed do eiusmod tempor
             ididunt utio labore et dolore magna aliqua.
           </div>
-          <div className="font-lato font-bold text-xs py-2 leading-4 text-blueColor">
+          <div className="font-lato font-bold text-sm py-2 leading-4 text-blueColor">
             Remediation:
           </div>
           <div>
