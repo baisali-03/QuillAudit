@@ -39,7 +39,7 @@ export default function ProjectCard() {
               onHideIssueSection={toggleIssueSection}
             />
             {showIssueSection && <IssueSection />}
-          </div>
+          </div> 
         </div>
       </Container>
     </React.Fragment>

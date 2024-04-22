@@ -7,37 +7,6 @@ body {
   background-color: #000;
 }
 
-.nav-elements {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.container {
-  padding: 0 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-.navbar {
-  height: 52px;
-  margin: 0 20px;
-  background-color: #191d23;
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  border-radius: 4px;
-  position: relative;
-}
-.nav-list ul {
-
-  font-family: 'Lato';
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-
-}
-
 .nav-list ul li:not(:last-child) {
   margin-right: 60px;
 }
@@ -75,22 +44,6 @@ body {
   width: 40%;
   height: 2px;
   background-color: #007aff;
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-  margin-right: 3rem;
-
-}
-
-.profile .dp {
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 0.5rem;
 }
 
 .Arrow {
