@@ -14,13 +14,26 @@ const CodeEditor = ({
   showFileFolder,
 }) => {
   React.useEffect(() => {
+
+    // Define custom theme for code-editor
+    monaco.editor.defineTheme("myTheme", {
+      base: "vs",
+      inherit: true,
+      rules: [],
+      colors: {
+        "editor.background": "#13161a",
+        "editorCursor.foreground": "#FFFFFF14",
+        "editor.lineHighlightBackground": "#13161a",
+      },
+    });
+    monaco.editor.setTheme("myTheme");
     const editor = monaco.editor.create(document.getElementById("editor"), {
       value: code,
       language: language,
       automaticLayout: true,
       lineNumbers: "on",
       minimap: { enabled: false },
-      theme: "vs-dark",
+
     });
 
     return () => {

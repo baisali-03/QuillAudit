@@ -16,6 +16,8 @@ const CustomSeparator = () => (
   </Typography>
 );
 export default function IssueSection() {
+
+  //-------------rendering breadcrumbs of issue section------------------
   const [breadcrumbLabels, setBreadcrumbLabels] = React.useState([
     "Count of Issues",
   ]);
@@ -56,6 +58,7 @@ export default function IssueSection() {
           ))}
         </Breadcrumbs>
         <div className="w-auto my-4 mx-4 border border-solid border-darkBorder"></div>
+        {/* ---------------open issue section--------------- */}
         {showInnerList ? (
           <IssueInnerList
             onChevronClick={handleChevronClick}
