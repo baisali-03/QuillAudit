@@ -23,6 +23,7 @@ const CodeEditor = ({
       rules: [],
       colors: {
         "editor.background": "#13161a",
+        "editor.foreground": "#7B8191",
         "editorCursor.foreground": "#7B8191",
         "editor.lineHighlightBackground": "#13161a",
       },
