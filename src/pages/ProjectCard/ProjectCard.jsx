@@ -32,11 +32,14 @@ export default function ProjectCard() {
             </div>
           </div>
           <div className="m-4 border border-solid border-darkBorder w-12/12"></div>
+          
           <div className="flex flex-row justify-between">
             {showFileFolder && <FileFolder />}
             <CodeEditor
               onHideFileFolder={toggleFileFolder}
               onHideIssueSection={toggleIssueSection}
+              showFileFolder={showFileFolder}
+              showIssueSection={showIssueSection}
             />
             {showIssueSection && <IssueSection />}
           </div> 

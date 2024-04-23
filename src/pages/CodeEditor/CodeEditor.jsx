@@ -12,6 +12,7 @@ const CodeEditor = ({
   onHideFileFolder,
   onHideIssueSection,
   showFileFolder,
+  showIssueSection
 }) => {
   React.useEffect(() => {
 
@@ -35,7 +36,7 @@ const CodeEditor = ({
       minimap: { enabled: false },
 
     });
-
+    
     return () => {
       editor.dispose();
     };
@@ -49,9 +50,12 @@ const CodeEditor = ({
     onHideIssueSection();
   };
 
+  //--------------condition to increase the width of code editor-----------------------
+  const editorWidth = showFileFolder && showIssueSection ? "40vw" : showFileFolder || showIssueSection ? "68vw" : "96vw";
+
   return (
-    <div className={`relative ${showFileFolder ? "" : "fullWidth"}`}>
-      <div className="relative bg-darkBorder">
+    <div className='relative'>
+      <div className="relative bg-darkBorder mx-2">
         <div className="absolute top-0 left-0 right-0 w-full h-10 p-0 flex justify-between text-sm rounded items-center">
           <div className="text-white bg-blue-600 h-10 flex justify-center items-center w-32">
             Sample File
@@ -66,7 +70,8 @@ const CodeEditor = ({
             <ClearIcon />
           </IconButton>
         </div>
-        <div id="editor" className="codeEditor w-96" />
+        <div id="editor" className="codeEditor" style={{ width: editorWidth }} />
+        {/* <div id="editor" className="codeEditor w-[40vw]" /> */}
       </div>
       <div className="absolute bottom-0 left-0">
         <IconButton

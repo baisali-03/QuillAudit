@@ -1,6 +1,5 @@
 .codeEditor {
-  width: 40vw;
-  height: 68vh;
+  min-height: 68vh;
   gap: 0px;
   border-radius: 4px 0px 0px 0px;
   border: 1px 0px 0px 0px;
