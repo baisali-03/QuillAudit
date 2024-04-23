@@ -15,7 +15,6 @@ const CodeEditor = ({
   showIssueSection
 }) => {
   React.useEffect(() => {
-
     // Define custom theme for code-editor
     monaco.editor.defineTheme("myTheme", {
       base: "vs",
@@ -35,7 +34,6 @@ const CodeEditor = ({
       automaticLayout: true,
       lineNumbers: "on",
       minimap: { enabled: false },
-
     });
     
     return () => {
@@ -51,8 +49,14 @@ const CodeEditor = ({
     onHideIssueSection();
   };
 
-  //--------------condition to increase the width of code editor-----------------------
+  //-------------Condition to increase the width of code editor-------------------
   const editorWidth = showFileFolder && showIssueSection ? "40vw" : showFileFolder || showIssueSection ? "68vw" : "96vw";
+
+  //-----------------Condition to rotate arrow icon for show folder---------------------
+  const LeftarrowRotation = showFileFolder ? 0 : 180;
+
+ //----------------Condition to rotate arrow icon for show Issue Section-----------------
+ const RightarrowRotation = showIssueSection ? 0 : 180;
 
   return (
     <div className='relative'>
@@ -72,7 +76,6 @@ const CodeEditor = ({
           </IconButton>
         </div>
         <div id="editor" className="codeEditor" style={{ width: editorWidth }} />
-        {/* <div id="editor" className="codeEditor w-[40vw]" /> */}
       </div>
       <div className="absolute bottom-0 left-0">
         <IconButton
@@ -86,6 +89,7 @@ const CodeEditor = ({
             height:20,
             width:20,
             marginBottom:'20px',
+            transform: `rotate(${LeftarrowRotation}deg)`,
           }}>
           <ArrowBackIcon />
         </IconButton>
@@ -102,6 +106,7 @@ const CodeEditor = ({
             height:20,
             width:20,
             marginBottom:'20px',
+            transform: `rotate(${RightarrowRotation}deg)`, 
           }}>
           <ArrowForwardIcon />
         </IconButton>
