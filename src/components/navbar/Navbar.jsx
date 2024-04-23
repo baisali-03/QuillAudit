@@ -13,7 +13,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-row">
         <div className="nav-list">
-          <ul className="flex justify-between items-center list-none">
+          <ul className="flex justify-between items-center pt-2 list-none">
             <li>
               <NavLink to="/">AI Audit</NavLink>
             </li>
@@ -32,6 +32,7 @@ const Navbar = () => {
           </ul>
           
         </div>
+        <div className="h-12 mx-2 border border-solid border-darkBorder"></div>
         <div className="flex items-center ml-4 mr-12">
           <img src={avatar} className="h-6 w-6 object-cover mr-2 rounded-full" alt="Profile" />
           <span className="text-white text-sm">Johhny Doe</span>
