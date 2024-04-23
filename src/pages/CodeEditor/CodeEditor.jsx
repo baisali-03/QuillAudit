@@ -54,7 +54,7 @@ const CodeEditor = ({
     showFileFolder && showIssueSection
       ? "42vw"
       : showFileFolder || showIssueSection
-      ? "68vw"
+      ? "69vw"
       : "96vw";
 
   //-----------------Condition to rotate arrow icon for show folder---------------------
