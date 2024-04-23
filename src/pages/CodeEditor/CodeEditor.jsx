@@ -50,7 +50,7 @@ const CodeEditor = ({
   };
 
   //-------------Condition to increase the width of code editor-------------------
-  const editorWidth = showFileFolder && showIssueSection ? "40vw" : showFileFolder || showIssueSection ? "68vw" : "96vw";
+  const editorWidth = showFileFolder && showIssueSection ? "42vw" : showFileFolder || showIssueSection ? "68vw" : "96vw";
 
   //-----------------Condition to rotate arrow icon for show folder---------------------
   const LeftarrowRotation = showFileFolder ? 0 : 180;
@@ -60,7 +60,7 @@ const CodeEditor = ({
 
   return (
     <div className='relative'>
-      <div className="relative bg-darkBorder mx-2">
+      <div className="relative bg-darkBorder ml-3">
         <div className="absolute top-0 left-0 right-0 w-full h-10 p-0 flex justify-between text-sm rounded items-center">
           <div className="text-white bg-blue-600 rounded-t-sm h-10 flex justify-center items-center w-32">
             Sample File
