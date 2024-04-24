@@ -86,14 +86,20 @@ const CodeEditor = ({
           <div className="h-10 mr-1 border border-solid border-darkBorder"></div>
           <div className="text-white rounded-t-sm h-10 pl-2 flex justify-center items-center w-36">
             SampleFile-3
-            <IconButton className="cancelButton" style={{ color: "white" }}>
+            <IconButton
+              className="cancelButton"
+              style={{ color: "white" }}
+              aria-label="Icon Button">
               <ClearIcon aria-label="Clear Icon" />
             </IconButton>
           </div>
           <div className="h-10 mr-1 border border-solid border-darkBorder"></div>
           <div className="text-white  rounded-t-sm h-10 pl-2 flex justify-center items-center w-36">
             SampleFile-4
-            <IconButton className="cancelButton" style={{ color: "white" }}>
+            <IconButton
+              className="cancelButton"
+              style={{ color: "white" }}
+              aria-label="Icon Button">
               <ClearIcon aria-label="Clear Icon" />
             </IconButton>
           </div>
@@ -103,7 +109,7 @@ const CodeEditor = ({
         <div className="text-white bg-darkBlue h-10 flex rounded justify-center items-center w-full"></div>
         <div
           id="editor"
-          className="codeEditor"
+          className="codeEditor h-[69vh]"
           style={{ width: editorWidth }}
         />
       </div>
@@ -122,7 +128,7 @@ const CodeEditor = ({
             transform: `rotate(${LeftarrowRotation}deg)`,
           }}
           aria-label="Cancel File Folder">
-          <ArrowBackIcon />
+          <ArrowBackIcon aria-label="Arrow button" />
         </IconButton>
       </div>
       <div className="absolute bottom-0 right-0">
@@ -140,7 +146,7 @@ const CodeEditor = ({
             transform: `rotate(${RightarrowRotation}deg)`,
           }}
           aria-label="Cancel Issue Section">
-          <ArrowForwardIcon />
+          <ArrowForwardIcon aria-label="Arrow Button" />
         </IconButton>
       </div>
     </div>

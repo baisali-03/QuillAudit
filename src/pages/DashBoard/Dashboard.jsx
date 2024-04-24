@@ -15,22 +15,45 @@ const CustomSeparator = () => (
 );
 
 export default function DashBoard() {
+  const [isTabView, setIsTabView] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsTabView(window.innerWidth < 1353);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Call on initial render
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
-      <Navbar />
-      <div role="presentation" onClick={handleClick}>
-        <Breadcrumbs
-          aria-label="breadcrumb"
-          className="py-2 pl-6 "
-          separator={<CustomSeparator />}>
-          <div className="font-lato text-text no-underline text-sm font-medium leading-4 text-left">
-            AI Audit
-          </div>
-          <div className="font-lato text-text text-sm font-medium leading-4 text-left">My Projects</div>
-          <div className="font-lato text-white text-sm font-medium leading-4 text-left">Code Editor</div>
-        </Breadcrumbs>
-        <ProjectCard />
-      </div>
+     
+      {isTabView ? (
+        <div className="text-subTitle flex self-center justify-self-center">This Website is not supported on tab view</div>
+      ) : (
+        <>
+        <Navbar />
+        <div role="presentation" onClick={handleClick}>
+          <Breadcrumbs
+            aria-label="breadcrumb"
+            className="py-2 pl-6"
+            separator={<CustomSeparator />}
+          >
+            <div className="font-lato text-text no-underline text-sm font-medium leading-4 text-left">
+              AI Audit
+            </div>
+            <div className="font-lato text-text text-sm font-medium leading-4 text-left">
+              My Projects
+            </div>
+            <div className="font-lato text-white text-sm font-medium leading-4 text-left">
+              Code Editor
+            </div>
+          </Breadcrumbs>
+          <ProjectCard />
+        </div>
+        </>
+      )}
     </>
   );
 }

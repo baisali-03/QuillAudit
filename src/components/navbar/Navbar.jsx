@@ -5,7 +5,7 @@ import avatar from "../../assets/images/DP.png";
 import Arrow from "../../assets/images/Arrow.png";
 const Navbar = () => {
   return (
-    <nav className="h-12 bg-primary rounded relative mx-5 border border-solid border-black w-[-68]">
+    <nav className="h-12 bg-primary rounded relative border border-solid border-black w-[-68]">
       <div className="flex justify-between items-center h-full px-3.5 ">
         <div className="flex flex-row items-center">
           <img src={Logo} alt="Profile" />

@@ -7,7 +7,7 @@ import issueList from "../../pages/IssueSection/issue-data";
 export default function IssueList({ onChevronClick }) {
   return (
     <Container maxWidth="l">
-      <div className="w-80 h-12 bg-primary font-body shadow rounded flex flex-row items-center justify-between pl-2 pr-10">
+      <div className="w-auto h-12 bg-primary font-body shadow rounded flex flex-row items-center justify-between pl-2 pr-10">
         <Button variant="contained">Current file</Button>
         <Button>Full Project</Button>
       </div>
