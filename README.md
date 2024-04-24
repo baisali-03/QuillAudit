@@ -6,9 +6,8 @@ This is a code-editor project, where there is a file section for the code editor
 
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
 
-**Server:** ReactJS, Monaco-editor, TailwindCSS, Vite
+ReactJS, Monaco-editor, TailwindCSS, Vite
 
 
 ## Installation
