@@ -59,7 +59,7 @@ export default function IssueSection() {
           </NavLink>
         ))}
       </Breadcrumbs>
-      <div className="w-auto my-4 mx-4 border border-solid border-darkBorder"></div>
+      <div className="w-auto my-4 mx-6 border border-solid border-darkBorder"></div>
       {/* ---------------open issue section--------------- */}
       {showInnerList ? (
         <IssueInnerList
