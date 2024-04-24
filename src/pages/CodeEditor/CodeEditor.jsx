@@ -23,8 +23,9 @@ const CodeEditor = ({
       colors: {
         "editor.background": "#13161a",
         "editor.foreground": "#CCCCCC",
-        "editorLineNumber.foreground": "#000000",
         "editorCursor.foreground": "#7B8191",
+        "editorLineNumber.foreground": "#CCCCCC",
+        "editorLineNumber.activeForeground": "#CCCCCC",
         "editor.lineHighlightBackground": "#13161a",
       },
     });
