@@ -24,7 +24,7 @@ export default function IssueInnerList({ onIssueTitleClick }) {
       <div className="issue-title-scrollable overflow-y-auto overflow-x-hidden max-h-64 ">
         {IssueTitle.map((data) => (
           <div
-            className="w-80 pl-1 bg-primary font-body shadow rounded flex flex-row items-center justify-between my-2.5"
+            className="w-auto pl-1 bg-primary font-body shadow rounded flex flex-row items-center justify-between my-2.5"
             key={data.id}>
             <div className="text-sm font-normal leading-4 w-4/5 text-left text-subTitle pl-2">
               {data.title}

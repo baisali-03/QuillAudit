@@ -13,7 +13,7 @@ export default function IssueList({ onChevronClick }) {
       </div>
       {issueList.map((data, index) => (
         <div
-          className="w-80 bg-primary font-body shadow rounded flex flex-row items-center justify-between p-2 my-2.5"
+          className="w-auto bg-primary font-body shadow rounded flex flex-row items-center justify-between p-2 my-2.5"
           key={data.number}>
           <div className="flex flex-row items-center" style={{ width: "35%" }}>
             <div

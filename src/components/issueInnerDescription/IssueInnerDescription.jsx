@@ -6,11 +6,11 @@ import AssistantPhotoIcon from "@mui/icons-material/AssistantPhoto";
 export default function IssueInnerDescription() {
   return (
     <Container maxWidth="l">
-      <div className="w-80 text-sm flex items-center pl-2 bg-primary rounded font-normal leading-4 h-12 text-left text-gray-400 mb-2">
+      <div className="w-auto text-sm flex items-center pl-2 bg-primary rounded font-normal leading-4 h-12 text-left text-gray-400 mb-2">
         #1. Lorem ipsum dolor sit ame
       </div>
       <div className="h-80">
-        <div className="text-sm flex flex-col px-2 bg-primary rounded font-normal leading-4 h-72 text-left text-gray-400 mb-2 overflow-y-auto overflow-x-hidden items-start border border-solid border-borderColor issueTitle1 w-80">
+        <div className="w-auto text-sm flex flex-col px-2 bg-primary rounded font-normal leading-4 h-72 text-left text-gray-400 mb-2 overflow-y-auto overflow-x-hidden items-start border border-solid border-borderColor issueTitle1">
           <div className="font-lato font-bold text-sm py-2 leading-4 text-blueColor">
             Description
           </div>

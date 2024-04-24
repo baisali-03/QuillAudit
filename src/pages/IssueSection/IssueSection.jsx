@@ -37,8 +37,8 @@ export default function IssueSection() {
   };
 
   return (
-    <Container maxWidth="l">
-      <div className="w-96 p-2 h-[73vh] bg-darkblue shadow rounded">
+   
+      <div className="w-[25vw] mr-2 p-2 h-[73vh] bg-darkblue shadow rounded">
         <Breadcrumbs
           aria-label="breadcrumb"
           className="font-medium leading-4 text-left pl-6 pt-1 text-subTitle "
@@ -80,6 +80,6 @@ export default function IssueSection() {
           </>
         )}
       </div>
-    </Container>
+ 
   );
 }
