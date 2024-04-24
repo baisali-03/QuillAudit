@@ -4,11 +4,6 @@
 This is a code-editor project, where there is a file section for the code editor and also issue counts.
 
 
-## Authors
-
-- [@Baisali-Pradhan](www.baisali.com)
-
-
 ## Tech Stack
 
 **Client:** React, Redux, TailwindCSS
