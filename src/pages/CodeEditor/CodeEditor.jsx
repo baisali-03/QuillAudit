@@ -23,6 +23,7 @@ const CodeEditor = ({
       colors: {
         "editor.background": "#13161a",
         "editor.foreground": "#CCCCCC",
+        "editorLineNumber.foreground": "#000000",
         "editorCursor.foreground": "#7B8191",
         "editor.lineHighlightBackground": "#13161a",
       },
@@ -71,13 +72,13 @@ const CodeEditor = ({
           <div className="text-white pl-2 bg-blue-600 rounded-t-sm h-10 flex justify-center items-center w-36">
             SampleFile-1
             <IconButton className="cancelButton" style={{ color: "white" }}>
-              <ClearIcon />
+              <ClearIcon aria-label="Clear Icon" />
             </IconButton>
           </div>
           <div className="text-white rounded-t-sm h-10 pl-2 flex justify-center items-center w-36">
             SampleFile-2
             <IconButton className="cancelButton" style={{ color: "white" }}>
-              <ClearIcon />
+              <ClearIcon aria-label="Clear Icon" />
             </IconButton>
           </div>
 
@@ -85,14 +86,14 @@ const CodeEditor = ({
           <div className="text-white rounded-t-sm h-10 pl-2 flex justify-center items-center w-36">
             SampleFile-3
             <IconButton className="cancelButton" style={{ color: "white" }}>
-              <ClearIcon />
+              <ClearIcon aria-label="Clear Icon" />
             </IconButton>
           </div>
           <div className="h-10 mr-1 border border-solid border-darkBorder"></div>
           <div className="text-white  rounded-t-sm h-10 pl-2 flex justify-center items-center w-36">
             SampleFile-4
             <IconButton className="cancelButton" style={{ color: "white" }}>
-              <ClearIcon />
+              <ClearIcon aria-label="Clear Icon" />
             </IconButton>
           </div>
 
@@ -118,7 +119,8 @@ const CodeEditor = ({
             width: 20,
             marginBottom: "20px",
             transform: `rotate(${LeftarrowRotation}deg)`,
-          }}>
+          }}
+          aria-label="Cancel File Folder">
           <ArrowBackIcon />
         </IconButton>
       </div>
@@ -135,7 +137,8 @@ const CodeEditor = ({
             width: 20,
             marginBottom: "20px",
             transform: `rotate(${RightarrowRotation}deg)`,
-          }}>
+          }}
+          aria-label="Cancel Issue Section">
           <ArrowForwardIcon />
         </IconButton>
       </div>
