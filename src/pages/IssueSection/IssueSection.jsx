@@ -16,7 +16,6 @@ const CustomSeparator = () => (
   </Typography>
 );
 export default function IssueSection() {
-
   //-------------rendering breadcrumbs of issue section------------------
   const [breadcrumbLabels, setBreadcrumbLabels] = React.useState([
     "Count of Issues",
@@ -27,59 +26,61 @@ export default function IssueSection() {
   const handleChevronClick = () => {
     setShowInnerList(!showInnerList);
     setShowDescription(false);
-    setBreadcrumbLabels(["Count of Issues",  "High Severity Issues"]);
+    setBreadcrumbLabels(["Count of Issues", "High Severity Issues"]);
   };
 
   const handleIssueTitleClick = () => {
     setShowDescription(true);
     setShowInnerList(false);
-    setBreadcrumbLabels(["Count of Issues", "High Severity Issues","Issue #1"]);
+    setBreadcrumbLabels([
+      "Count of Issues",
+      "High Severity Issues",
+      "Issue #1",
+    ]);
   };
 
   return (
-   
-      <div className="w-[25vw] mr-2 p-2 h-[73vh] bg-darkblue shadow rounded">
-        <Breadcrumbs
-          aria-label="breadcrumb"
-          className="font-medium leading-4 text-left pl-6 pt-1 text-subTitle "
-          separator={<CustomSeparator />}>
-          {breadcrumbLabels.map((label, index) => (
-            <NavLink
-              key={index}
-              className="font-lato text-text no-underline text-sm font-medium leading-4 text-left"
-              onClick={() => {
-                setBreadcrumbLabels(breadcrumbLabels.slice(0, index + 1));
-                setShowInnerList(index === 1);
-                setShowDescription(index === 2);
-              }}
-              style={{ cursor: "pointer", color: "white" }}>
-              {label}
-            </NavLink>
-          ))}
-        </Breadcrumbs>
-        <div className="w-auto my-4 mx-4 border border-solid border-darkBorder"></div>
-        {/* ---------------open issue section--------------- */}
-        {showInnerList ? (
-          <IssueInnerList
-            onChevronClick={handleChevronClick}
-            onIssueTitleClick={handleIssueTitleClick}
-          />
-        ) : showDescription ? (
-          <IssueInnerDescription />
-        ) : (
-          <IssueList onChevronClick={handleChevronClick} />
-        )}
-       
-        {!showDescription && (
-          <>
-           <div className="w-auto my-4 mx-6 border border-solid border-darkBorder"></div>
-          <div className="text-white text-sm leading-4 ml-3 flex flex-row items-center">
+    <div className="w-[25vw] mr-2 p-2 h-[73vh] bg-darkblue shadow rounded">
+      <Breadcrumbs
+        aria-label="breadcrumb"
+        className="font-medium leading-4 text-left pl-6 pt-1 text-subTitle "
+        separator={<CustomSeparator />}>
+        {breadcrumbLabels.map((label, index) => (
+          <NavLink
+            key={index}
+            className="font-lato text-text no-underline text-sm font-medium leading-4 text-left"
+            onClick={() => {
+              setBreadcrumbLabels(breadcrumbLabels.slice(0, index + 1));
+              setShowInnerList(index === 1);
+              setShowDescription(index === 2);
+            }}
+            style={{ cursor: "pointer", color: "white" }}>
+            {label}
+          </NavLink>
+        ))}
+      </Breadcrumbs>
+      <div className="w-auto my-4 mx-4 border border-solid border-darkBorder"></div>
+      {/* ---------------open issue section--------------- */}
+      {showInnerList ? (
+        <IssueInnerList
+          onChevronClick={handleChevronClick}
+          onIssueTitleClick={handleIssueTitleClick}
+        />
+      ) : showDescription ? (
+        <IssueInnerDescription />
+      ) : (
+        <IssueList onChevronClick={handleChevronClick} />
+      )}
+
+      {!showDescription && (
+        <>
+          <div className="w-auto my-4 mx-6 border border-solid border-darkBorder"></div>
+          <div className="text-white text-sm leading-4 ml-3 flex flex-row items-center ">
             <Checkbox {...label} style={{ color: "white" }} />
             <div>Exclude Dependencies</div>
           </div>
-          </>
-        )}
-      </div>
- 
+        </>
+      )}
+    </div>
   );
 }
